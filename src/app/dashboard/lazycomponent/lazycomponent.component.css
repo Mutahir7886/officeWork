@@ -1,0 +1,43 @@
+.todoList{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background: #655e5e;
+    color: white;
+    border-radius: 10px;
+
+  cursor: pointer;
+  max-width: 90%;
+  margin:  10px 50px;
+}
+.todoList div{
+  flex: 1 1 33%;
+  text-align:center
+
+}
+
+
+
+.Header{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px;
+    background: lightslategray;
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+  max-width: 90%;
+  margin:  0 50px;
+}
+
+.Header p{
+  flex: 1 1 33%;
+  text-align:center
+
+}
+
+.ABC{
+  background: #3c1b1b
+}

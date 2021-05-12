@@ -1,0 +1,26 @@
+
+<div class="Header">
+  <p>
+    Title
+  </p>
+  <p>
+    Id
+  </p>
+  <p>
+    Status
+  </p>
+</div>
+<div  *ngFor="let item of todoList;let i=index">
+
+  <div (dblclick)="changeStatus(i, item.id)" class="todoList" [ngClass]="item.completed == true?'ABC':''">
+  <div>
+    {{item.title}}
+  </div>
+  <div>
+      {{item.id}}
+  </div>
+  <div>
+      {{item.completed}}
+  </div>
+</div>
+</div>

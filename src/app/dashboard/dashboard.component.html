@@ -1,0 +1,10 @@
+<p>dashboard works!</p>
+<p (click)="ptag()">Give input to the component</p>
+
+<h1 *ngIf="parrentMessage=='A'">A tab opened</h1>
+<h1 *ngIf="parrentMessage=='B'">B tab opened</h1>
+<h1 *ngIf="parrentMessage=='C'">C tab opened</h1>
+<h1 *ngIf="parrentMessage=='D'">D tab opened</h1>
+
+
+<app-child  [Hello]="inputmessage" (tabValue)="check($event)" ></app-child>
